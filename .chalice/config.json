@@ -1,0 +1,18 @@
+{
+  "version": "2.0",
+  "app_name": "setti",
+  "environment_variables": {
+    "SETTINGS_TABLE": "SettiSettings"
+  },
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "api"
+    },
+    "prod": {
+      "api_gateway_stage": "prod",
+      "environment_variables": {
+        "SETTINGS_TABLE": "SettiSettings_prod"
+      }
+    }
+  }
+}
